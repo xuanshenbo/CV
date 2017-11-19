@@ -1,0 +1,348 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+% \usepackage[labelformat=empty]{caption}
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Shenbo Xuan}{}%{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:xuanshenbo@hotmail.com}{xuanshenbo\mbox{}@\mbox{}hotmail.com}\sbull
+\textsmaller{+}64 (0)21 107 1907\sbull
+%{\newnums cies010} \emph{(Skype)}\sbull
+\href{http://www.linkedin.com/in/xuanshenbo}{www.linkedin.com/in/xuanshenbo}
+\\
+4 Norwood Place, Johnsonville, Wellington, \\New Zealand, 6037
+%Mathenesserplein 84\sbull
+%3022\thinspace {\large \sc ld}\sbull
+%Rotterdam\sbull
+%The Netherlands
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+% \noindent \emph{Creative geek with roots in the open source movement, an entrepreneurial mindset and a passion for delivering value by developing maintainable software.}
+\noindent \emph{A reliable, hardworking and enthusiastic final year Computer Science \& Statistics student seeking opportunities that leads me to the first step to success.}
+\\
+\\
+
+I have been interested in mathematics and numbers since childhood. When I entered university I chose Computer Science as my major because I wanted to explore more in the technology area. At the same time I 
+was doing a minor in Mathematics. I have changed to a Statistics major, because it is more useful in solving real world problems than pure mathematics.
+
+Due to the heavy workload I spend most of my time doing university assignments and projects. However I try to enjoy my life without a monitor whenever 
+I get a chance. For example recently I have become interested in sustainable development. Therefore I am trying my best to 
+recycle and not to waste food.
+
+\end{multicols}
+
+\spacedhrule{-0.2em}{-0.5em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.victoria.ac.nz/}{Victoria University of Wellington}}
+  {\textsc{Wellington}} {%
+  \headedsubsection
+    {Bachelor of Science in Computer Science \& Statistics}
+    {2013 -- 2016}
+    {\bodytext{Currently completing my final year of the degree. Started with a single major in Computer Science and picked up Statistics along the way. Have found connections between the two areas and am enjoying both at the moment.\\\\
+    \emph{\textbf{Core Courses Taken}}
+    \begin{multicols}{2}
+      \begin{itemize}
+	\item Algorithms and Data Structures\hspace*{1cm} A
+	\item Software Development\hspace*{2.4cm} A
+	\item Software Design\hspace*{3.4cm} A-
+	\item Database System Engineering\hspace*{1.35cm} A
+	\item Business Applications Programming\hspace*{.4cm} A+
+	\item Systems Programming\hspace*{2.57cm} A
+	\item Introduction to Artificial Intelligence\hspace*{.4cm} A-
+	\item Structured Methods\hspace*{3cm} A+
+      \end{itemize}
+    \end{multicols}
+    }}
+  }
+
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+
+\inlineheadsection
+  {Programming languages:}
+  {Java \emph{(mother tongue)}, Python \emph{(professional proficiency)}, C \emph{(limited working proficiency)}, R \emph{(elementary proficiency)}, JavaScript \emph{(beginner)} and C\# \emph{(beginner)}.}
+
+\vspace{0.5em}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical skills:}
+  {Object Oriented software implementation, within a team. Algorithms implementation and analysis. Machine learning algorithms. Git. Understanding in agile methodologies and other process models. PostgreSQL and database engineering knowledge gained from university courses. Linux, command line, shell scripts. Some experience in front end programming: HTML, CSS and JavaScript.}
+
+\vspace{0.5em}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Other skills:}
+  {Clear communication skills. Practiced research skills. Solid mathematics and statistics skills. Ability of learning. Time management.}
+
+  
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.victoria.ac.nz/}{Victoria University of Wellington}}
+  {\textsc{Wellington}} {%
+  \headedsubsection
+    {Web Project Support - \textsmaller{\em{(Communications and Marketing Department)}}}
+    {Mar 2016 -- present}
+    {\bodytext{
+    \textsmaller{\em{* This is a part-time job I am doing between study at university. (Around 12 hours a week)}}\\
+    The Communications and Marketing Department is working on the Web Improvement Project. I support the developers and the content writers. 
+    My tasks are mainly working with the Content Management System \emph{SquizMatrix} including:
+     \begin{itemize}
+      \item Loading the content into \emph{SquizMatrix}.
+      \item Cropping pictures using \emph{Photoshop} and loading them into \emph{SquizMatrix}.
+      \item Helping our Senior Business Analyst to write requirements.
+     \end{itemize}
+    Though the job is not coding intensive, my experiences in programming have made it easy for me to use \emph{SquizMatrix} since there are 
+    references passing around in \emph{SquizMatrix} and the fact that \emph{SquizMatrix} uses the JSON and HTML formats. 
+    }}
+    
+  \headedsubsection
+    {Tutor - \textsmaller{\em{(School of Engineering and Computer Science)}}}
+    {Feb 2016 -- present}
+    {\bodytext{
+     \textsmaller{\em{* This is a part-time job I am doing between study at university. (Around 6 hours a week)}}
+     \begin{itemize}
+      \item Running helpdesk sessions - answering students' questions related to assignments, projects (in C, Python and Assembly language) and general questions including degree planning.
+%       \item Running labs - organizing labs, encouraging people to talk about there thoughts on software design. Answering questions related to the labs (software design \& Java). Marking students off. 
+      \item Marking assignments and projects.
+     \end{itemize}
+    }}
+}
+
+% \headedsection  % sets the header for a subsection and contains usually body text
+%   {\href{http://www.victoria.ac.nz/}{Victoria University of Wellington} (School of Engineering and Computer Science)}
+%   {\textsc{Wellington}} {%
+%   \headedsubsection
+%     {Tutor}
+%     {Feb 2016 -- present}
+%     {\bodytext{Introductory lecture on history of software development and open source for 1\textsuperscript{st} year CS students.}}
+% }
+
+\headedsection
+  {\href{http://www.pingar.com/}{Pingar}}
+  {\textsc{Auckland}} {%
+
+  \headedsubsection
+    {Undergraduate Research Intern}
+    {Dec 2015 -- Feb 2016}
+    {\bodytext{
+     \begin{itemize}
+      \item Funded by \href{http://www.callaghaninnovation.govt.nz/}{Callaghan Innovation}.
+      \item Was a member of the Research Team. Natural Language Processing was the main research topic at the time.
+      \item Worked on two projects together with my supervisor: 1.Machine Learning and 2.Document De-duplication.
+      \item Researched and implemented the algorithms for the two projects using Python.
+      \item Applied the Machine Learning algorithms to categorize documents and received better results than human categorized documents.
+      \item Applied a de-duplication algorithm to detect similar documents (e.g. same document in different versions).
+      \item Worked with the Development Team. Was involved in testing and debugging the product.
+      \item Had weekly meetings with our Head of Research and Development.
+      \item Attended daily stand-ups and weekly planning meetings with the Development Team and gained industrial software development experience (e.g. Scrum).
+     \end{itemize}
+    }}
+}
+
+% \headedsection
+%   {\href{http://www.zarafa.com}{Zarafa}}
+%   {\textsc{Delft, The Netherlands}} {%
+%   \headedsubsection
+%     {\acr{QA} \& Release Manager}
+%     {Dec \apo09 -- Jan \apo11}
+%     {\bodytext{Zarafa might be the fastest growing open source product company in Europe, making a drop-in replacement for MS Exchange.  Reported directly to the \acr{CEO}, Brian Josef, and worked closely with the \acr{CTO}, Steve Hardy.  In charge of the 6 men strong QA department.  Established test automation and continuous integration.  Architected and implemented an all-integrated documentation and translation system that employed community effort.  Got sent to India to analyse and streamline their outsourced operations.}}
+% }
+
+% \headedsection
+%   {\href{http://www.dharmapublishing.com}{Dharma Publishing}}
+%   {\textsc{near San Francisco (\acr{CA}), \acr{USA}}} {%
+%   \headedsubsection
+%     {\acr{IT} Consultant}
+%     {Nov \apo09 -- Dec \apo09}
+%     {\bodytext{Dharma Publishing, the worlds largest Buddhist publisher, is a non-profit, all-volunteer organisation that helps to preserve Tibetan Buddhism and culture. Built their \href{http://www.dharmapublishing.com}{web shop}, and moved their digital content sales to SaaS applications.}}
+% }
+
+% \headedsection
+%   {\href{http://www.kde.org}{KDE}}
+%   {\href{http://edu.kde.org/kturtle}{edu.kde.org/kturtle}} {%
+%   \headedsubsection
+%     {Software Engineer}
+%     {Dec \apo03 -- present}
+%     {\bodytext{\acr{KT}urtle is an educational programming environment that simplifies learning the basics of programming.  \acr{KT}urtle is intended as a gift to future generations:\ a simple environment to get started with programming.  In 2003 \acr{KT}urtle got admitted to the \acr{KDE} project.}}
+% }
+
+% \headedsection
+%   {\href{http://truetopiaproject.org}{Truetopia Project}}
+%   {\href{http://truetopiaproject.org}{truetopiaproject.org}} {%
+%   \headedsubsection
+%     {Initiator}
+%     {Nov \apo07 -- Apr \apo10}
+%     {\bodytext{The Truetopia Project is an open source web application (Rails) to facilitate self-governing communities.  It provides a workflow for collaborative problem identification and solution design.}}
+% }
+
+% \headedsection
+%   {\href{http://www.dpu.ac.th/dpuic}{Dhurakij Pundit University International College}}
+%   {\textsc{Bangkok, Thailand}} {%
+%   \headedsubsection
+%     {Guest Lecturer}
+%     {Sep \apo09}
+%     {\bodytext{Invited by Dr.\@ Pilun Piyasirivej and Mr.\@ Michel Bauwens for two guest lectures:\ the open source movement and the semantic web.}}
+% }
+
+% \headedsection
+%   {\href{http://www.opendream.th}{Opendream}}
+%   {\textsc{Bangkok, Thailand}} {%
+%   \headedsubsection
+%     {\acr{IT} Consultant}
+%     {Aug \apo09 -- Sep \apo09}
+%     {\bodytext{Architected and largely implemented an open source media sharing web service (\acr{REST} api) that facilitates video uploads, transcoding and streaming.  Coached their development team on system design, Ruby development (using Merb/Rails) and testing strategies such as \acr{TDD}/\acr{BDD}.}}
+% }
+
+% \headedsection
+%   {\href{http://www.commuun.nl}{Commuun}}
+%   {\textsc{Rotterdam, The Netherlands}} {%
+%   \headedsubsection
+%     {Senior Visionary}
+%     {Jul \apo06 -- Sep \apo09}
+%     {\bodytext{Set up the technical infrastructure, defined the core competences and created a brand together with Peter Duijnstee (the proprietor of Commuun).  Then collaborated on several web applications (all Rails apps) within the context of his company.}}
+% }
+
+% \headedsection
+%   {\href{http://www.eur.nl}{Erasmus University Rotterdam}}
+%   {\textsc{Rotterdam, The Netherlands}} {%
+%   \headedsubsection
+%     {Guest Lecturer}
+%     {Jul \apo06 -- Jul \apo09}
+%     {\bodytext{Conducted a guest lecture on the phenomenon of open source, as part of the first year curriculum of \emph{Computer Science \& Economics}.}}
+% }
+
+% %\headedsection
+% %  {LIP Automatisering}
+% %  {\textsc{Breda, The Netherlands}} {%
+% %  \headedsubsection
+% %    {Software Auditor}
+% %    {Sep \apo06}
+% %    {\bodytext{Audited their flag ship product \emph{\acr{LIP} Suite}:\ an %\acr{ERP} solution for construction companies.}}
+% %}
+
+% \headedsection
+%   {\href{http://www.thehealthagency.com}{The Health Agency}}
+%   {\textsc{Delft \& Rotterdam, The Netherlands}} {%
+
+%   \headedsubsection
+%     {Software Engineer}
+%     {Jun \apo05 -- Feb \apo06}
+%     {\bodytext{Worked on their CMS (written in Python and uses Postgre\acr{SQL}, \acr{XML}/\acr{XSLT} and Twisted).}}
+
+%   \headedsubsection
+%     {Software Auditor}
+%     {Dec \apo06}
+%     {\bodytext{Assessed their Python/Zope/\acr{Z}o\acr{DB}-based web framework re-engineering project.}}
+% }
+
+% \vspace{-0.2em}
+% \begin{center}
+%   \emph{\small Please refer to my \href{http://www.linkedin.com/in/ciesbreijs}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+% \end{center}
+\makeatletter
+%You may (un-)comment this line to improve the looks.
+\renewcommand{\@seccntformat}[1]{{\csname the#1\endcsname}.\hspace{0.5em}} 
+
+%Here is the crucial part:
+\long\def\@maketblcaption#1#2{
+}
+\renewcommand{\table}{\let\@makecaption\@maketblcaption\@float{table}}
+\makeatother
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Software Projects}
+
+\begin{table}[!htbp]
+\centering
+\caption{}
+\label{my-label}
+\begin{tabular}{|l|l|}
+\hline
+\multicolumn{2}{|l|}{\hspace{.2cm}\textbf{Garage Management System}}                                                                                                                                                                                                                 \\ \hline
+\hspace{.2cm}Worked with\hspace{.2cm}          & \hspace{.2cm}Max Tan                                                                                                                                                                                                                                          \\ \hline
+\hspace{.2cm}Programming Language\hspace{.2cm} & \hspace{.2cm}Python, SQLite3                                                                                                                                                                                                                                  \\ \hline
+\hspace{.2cm}Project Description\hspace{.2cm}  & \begin{tabular}[c]{@{}l@{}}\hspace{.2cm}This project was built for a friend who owns a garage. The system consists\hspace{.2cm}\\\hspace{.2cm}of the integrated stock management system and invoice management system.\end{tabular}                                                 \\ \hline
+\hspace{.2cm}Github Link \hspace{.2cm}         & \hspace{.2cm}\url{https://github.com/maximustann/Bing\_project}                                                                                                                                                                                                     \\ \hline
+\multicolumn{2}{|l|}{\hspace{.2cm}\textbf{Cluedo Game}}                                                                                                                                                                                                                              \\ \hline
+\hspace{.2cm}Programming Language \hspace{.2cm}& \hspace{.2cm}Java \hspace{.2cm}                                                                                                                                                                                                                                            \\ \hline
+\hspace{.2cm}Project Description \hspace{.2cm} & \begin{tabular}[c]{@{}l@{}}\hspace{.2cm}A project for a second year course. Implemented the board game Cluedo.\hspace{.2cm}  \\\hspace{.2cm}The project has a text version as well as a GUI version.\hspace{.2cm}\end{tabular}                                                                     \\ \hline
+\hspace{.2cm}Github Link\hspace{.2cm}          & \begin{tabular}[c]{@{}l@{}}\hspace{.2cm}\url{https://github.com/xuanshenbo/Cluedo-Text-based}\hspace{.2cm} \\  \hspace{.2cm}\url{https://github.com/xuanshenbo/Cluedo-GUI}\hspace{.2cm}\end{tabular}                                                                                                             \\ \hline
+\multicolumn{2}{|l|}{\hspace{.2cm}\textbf{The Adventure Game}}                                                                                                                                                                                                                       \\ \hline
+\hspace{.2cm}Worked with\hspace{.2cm}          & \hspace{.2cm}D Flanagan, G Tucker, M Ying \& L Yan                                                                                                                                                                                                            \\ \hline
+\hspace{.2cm}Programming Language\hspace{.2cm} & \hspace{.2cm}Java                                                                                                                                                                                                                                             \\ \hline
+\hspace{.2cm}Project Description \hspace{.2cm} & \begin{tabular}[c]{@{}l@{}}\hspace{.2cm}A group project for a second year course. It's a simple RPG with basic\hspace{.2cm}\\\hspace{.2cm}features. The project used MVC design pattern. I did the saving and loading\hspace{.2cm}\\\hspace{.2cm}part with XML using Java built-in JAXB API.\end{tabular} \\ \hline
+\hspace{.2cm}Github Link\hspace{.2cm}          & \hspace{.2cm}\url{https://github.com/xuanshenbo/Adventure-Game}                                                                                                                                                                                                     \\ \hline
+\multicolumn{2}{|l|}{\hspace{.2cm}\textbf{Web Crawler}}                                                                                                                                                                                                                              \\ \hline
+\hspace{.2cm}Programming Language \hspace{.2cm}& \hspace{.2cm}Python                                                                                                                                                                                                                                           \\ \hline
+\hspace{.2cm}Project Description \hspace{.2cm} & \begin{tabular}[c]{@{}l@{}}\hspace{.2cm}A wget-like web crawler. Recursively crawl and save a webpage and its\hspace{.2cm}\\\hspace{.2cm}attachments.\end{tabular}                                                                                                                                                                \\ \hline
+\hspace{.2cm}Github Link        \hspace{.2cm}  & \hspace{.2cm}\url{https://github.com/xuanshenbo/Web-crawler} \\ \hline
+\multicolumn{2}{|l|}{\hspace{.2cm}\textbf{KPSmart System}}                                                                                                                                                                                                                       \\ \hline
+\hspace{.2cm}Worked with\hspace{.2cm}          & \hspace{.2cm}N Bonette, Q Copley, J Huang \& B Liao                                                                                                                                                                                                            \\ \hline
+\hspace{.2cm}Programming Language\hspace{.2cm} & \hspace{.2cm}Java                                                                                                                                                                                                                                             \\ \hline
+\hspace{.2cm}Project Description \hspace{.2cm} & \begin{tabular}[c]{@{}l@{}}\hspace{.2cm}A group project for a third year course. It's a management system built for\hspace{.2cm}\\\hspace{.2cm}Kelburn Postal Office (our pseudo client). The project was built in a 6-week\hspace{.2cm}\\\hspace{.2cm}period of time. We used the phased develpment model for the project.\end{tabular} \\ \hline
+\hspace{.2cm}Github Link\hspace{.2cm}          & \hspace{.2cm}\url{https://github.com/xuanshenbo/KPSmart-System}                                                                                                                                                                              \\ \hline 
+\end{tabular}
+\end{table}
+
+
+
+
+
+% \headedsection
+%   {\href{https://www.auckland.ac.nz/}{The University of Auckland}}
+%   {\textsc{Auckland}} {%
+%   \headedsubsection
+%     {Master of Science in Computer Science}
+%     {2019 -- 2021}
+%     {\bodytext{Currently completing my final year of the degree. Started with a single major in Computer Science and picked up Statistics along the way. Have found connections between the two areas and am enjoying both at the moment.}}
+% }
+
+\end{document}
