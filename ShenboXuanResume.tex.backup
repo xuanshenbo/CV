@@ -1,0 +1,194 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Shenbo Xuan}{Software Developer}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+\noindent\href{mailto:xuanshenbo@hotmail.com}{xuanshenbo\mbox{}@\mbox{}hotmail.com}\sbull
+\textsmaller{+}64 (0)21 107 1907\sbull
+\href{http://www.linkedin.com/in/xuanshenbo}{www.linkedin.com/in/xuanshenbo}
+\\
+Wellington - New Zealand
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent \emph{A reliable, hardworking and enthusiastic final year Computer Science \& Statistics student seeking software development opportunities that lead me to the first step to success.}
+\\
+\\
+
+I have been interested in mathematics and numbers since childhood. When I entered university I chose Computer Science as my major because I wanted to explore more in the technology area. At the same time I 
+was doing a minor in Mathematics. I have changed it to a Statistics major, because it is more useful in solving real world problems than pure mathematics.
+
+My time is filled with my university assignments and part-time jobs. However I try to enjoy my life without a monitor whenever 
+I get a chance. For example recently I have become interested in sustainable development. Therefore I am trying my best to 
+recycle and not to waste food. I also go to the gym regularly to keep myself alive.
+
+\end{multicols}
+
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+
+\inlineheadsection
+  {Programming languages:}
+  {Java \emph{(mother tongue)}, Python \emph{(professional proficiency)}, C \emph{(limited working proficiency)}, R \emph{(limited working proficiency)}, JavaScript \emph{(elementary proficiency)} and C\# \emph{(beginner)}.}
+
+\vspace{0.5em}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical skills:}
+  {Object Oriented software implementation, within a team. Algorithms implementation and analysis. Machine learning algorithms. Git. Understanding in agile methodologies and other process models. PostgreSQL and database engineering knowledge gained from university courses. Linux, command line, shell scripts. Some experience in front end programming: HTML, CSS and JavaScript.}
+
+\vspace{0.5em}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Other skills:}
+  {Clear communication skills. Practiced research skills. Solid mathematics and statistics skills. Ability of learning. Time management.}
+
+  
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection
+  {\href{http://www.edmi-meters.com/}{EDMI}}
+  {\textsc{Wellington, New Zealand}} {%
+
+  \headedsubsection
+    {Software Developer}
+    {Nov 2016 -- present}
+    {\bodytext{
+    EDMI is one of the leading Smart Energy Solutions providers in the world. Software Wellington works closely with teams in Australia and Singapore 
+    to deliver  
+    }}
+}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.victoria.ac.nz/}{Victoria University of Wellington}}
+  {\textsc{Wellington, New Zealand}} {%
+  \headedsubsection
+    {Web Project Support - \textsmaller{\em{Part-time between study at university, around 12 hours a week}}}
+    {Mar 2016 -- Nov 2016}
+    {\bodytext{
+    Victoria University of Wellington was rebuilding their website. My various tasks include converting text content into JSON \& HTML formats, business analysis tasks, and some JavaScript programming. 
+    }}
+    
+  \headedsubsection
+    {Tutor - \textsmaller{\em{Part-time between study at university, around 8 hours a week}}}
+    {Feb 2016 -- Nov 2016}
+    {\bodytext{
+     Tutored one second-year Network Engineering courses in each semester, tasks include:
+     \begin{itemize}
+      \item Running helpdesk sessions - answering students' questions related to assignments, projects (in C, Python and Assembly language) and general questions including degree planning.
+      \item Marking assignments and projects.
+     \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{http://www.pingar.com/}{Pingar}}
+  {\textsc{Auckland, New Zealand}} {%
+
+  \headedsubsection
+    {Research Intern}
+    {Dec 2015 -- Feb 2016}
+    {\bodytext{
+    Pingar use artificial intelligence technologies to analyse unstructured text data. This 3-month internship was funded by New Zealand government agency 
+    \href{http://www.callaghaninnovation.govt.nz/}{Callaghan Innovation}.
+    
+    
+    
+     \begin{itemize}
+      \item Funded by \href{http://www.callaghaninnovation.govt.nz/}{Callaghan Innovation}.
+      \item Was a member of the Research Team. Natural Language Processing was the main research topic at the time.
+      \item Worked on two projects together with my supervisor: 1.Machine Learning and 2.Document De-duplication.
+      \item Researched and implemented the algorithms for the two projects using Python.
+      \item Applied the Machine Learning algorithms to categorize documents and received better results than human categorized documents.
+      \item Applied a de-duplication algorithm to detect similar documents (e.g. same document in different versions).
+      \item Worked with the Development Team. Was involved in testing and debugging the product.
+      \item Had weekly meetings with our Head of Research and Development.
+      \item Attended daily stand-ups and weekly planning meetings with the Development Team and gained industrial software development experience (e.g. Scrum).
+     \end{itemize}
+    }}
+}
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Software Project Examples}
+blah blah blah blah
+
+more blah
+
+\spacedhrule{0.4em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.victoria.ac.nz/}{Victoria University of Wellington}}
+  {\textsc{Wellington, New Zealand}} {%
+  \headedsubsection
+    {Bachelor of Science in Computer Science \& Statistics}
+    {2013 -- 2016}
+    {\bodytext{Currently completing my final year of the degree. Started with a single major in Computer Science and picked up Statistics along the way. Have found connections between the two areas and am enjoying both at the moment.\\\\
+    \emph{\textbf{Core Courses Taken}}
+    \begin{multicols}{2}
+      \begin{itemize}
+	\item Algorithms and Data Structures\hspace*{1cm} A
+	\item Software Development\hspace*{2.4cm} A
+	\item Software Design\hspace*{3.4cm} A-
+	\item Database System Engineering\hspace*{1.35cm} A
+	\item Business Applications Programming\hspace*{.4cm} A+
+	\item Systems Programming\hspace*{2.57cm} A
+	\item Introduction to Artificial Intelligence\hspace*{.4cm} A-
+	\item Structured Methods\hspace*{3cm} A+
+      \end{itemize}
+    \end{multicols}
+    }}
+  }
+  
+\makeatletter
+%You may (un-)comment this line to improve the looks.
+\renewcommand{\@seccntformat}[1]{{\csname the#1\endcsname}.\hspace{0.5em}} 
+
+%Here is the crucial part:
+\long\def\@maketblcaption#1#2{
+}
+\renewcommand{\table}{\let\@makecaption\@maketblcaption\@float{table}}
+\makeatother
+
+\end{document}
